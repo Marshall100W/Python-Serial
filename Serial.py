@@ -47,7 +47,7 @@ def lee_datos(lectura):
 
 print('\n\n*** UP THE IRONS! ***\n')
 lista_puertos()
-puerto = input('Puerto a leer:')
+puerto = input('Puerto a leer: ')
 conectarse_a_puerto()
 
 while lectura < intentos + 1:
