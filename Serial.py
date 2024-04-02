@@ -8,6 +8,7 @@ import time
 puerto = 'COM14'
 valor = 0
 lectura = 1
+intentos = 5
 
 
 def lista_puertos():
@@ -48,7 +49,7 @@ print('\n\n*** UP THE IRONS! ***\n')
 lista_puertos()
 conectarse_a_puerto()
 
-while lectura < 6:
+while lectura < intentos + 1:
     lectura = lee_datos(lectura)
     time.sleep(1)
 
