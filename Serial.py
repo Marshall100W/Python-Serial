@@ -19,7 +19,6 @@ def lista_puertos():
         print(lista_puertos[i].name)
 
 
-
 def conectarse_a_puerto():
     try:
         global serial_XIAO
