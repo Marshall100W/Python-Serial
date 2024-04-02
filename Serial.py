@@ -5,7 +5,7 @@ import serial.tools.list_ports
 import time
 
 
-puerto = 'COM14'
+puerto = ''
 valor = 0
 lectura = 1
 intentos = 5
@@ -17,6 +17,7 @@ def lista_puertos():
 
     for i in range(len(lista_puertos)):
         print(lista_puertos[i].name)
+
 
 
 def conectarse_a_puerto():
@@ -33,7 +34,7 @@ def lee_datos(lectura):
     try:
         valor = serial_XIAO.readline().decode('ascii')
         valor = valor[slice(0,len(valor)-1)] 
-        print('-', valor)
+        print(valor)
         lectura = 1
     except:
         print('Error ('+ str(lectura) + ') leyendo puerto ' + puerto, end=' ')
@@ -47,6 +48,7 @@ def lee_datos(lectura):
 
 print('\n\n*** UP THE IRONS! ***\n')
 lista_puertos()
+puerto = input('Puerto a leer:')
 conectarse_a_puerto()
 
 while lectura < intentos + 1:
