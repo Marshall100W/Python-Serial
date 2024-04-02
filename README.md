@@ -1,6 +1,6 @@
 ### Abril 2024 ###
 
-Un simple ejercicio que lee del puerto serie, lo que desde un microcontrolador esté enviando.
+Un simple ejercicio que lee del puerto serie, lo que desde un microcontrolador se esté enviando.
 
 1. Listas los puertos serie disponibles.
 2. Pregunta de qué puerto serie se quiere leer.
